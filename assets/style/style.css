@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Quicksand:wght@300;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+nav {
+  background-color: rgb(24, 24, 24);
+  padding-block: 0.5rem;
+  padding-inline: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-navbar img {
+  width: 60px;
+  border-radius: 50%;
+}
+nav ul {
+  padding-inline: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: rgba(254, 206, 0, 255);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+.location {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.location:hover {
+  color: rgba(254, 206, 0, 255);
+}
+
+/* content */
+main .content {
+  padding-inline: 50px;
+  padding-block: 45px;
+}
+main .content h1 {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  margin-block: 0;
+}
+
+main .content .menu h1 {
+  margin-bottom: 40px;
+}
+
+main .content .menu .items {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content .menu .items .menu-image {
+  display: flex;
+  flex: 1;
+}
+main .content .menu .items .menu-image img {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+main .content .menu .items .menu-image img:hover {
+  box-shadow: 0 0 2em rgba(1, 17, 39, 0.4);
+}
+
+main .content .menu .items .menu-description {
+  flex: 1;
+}
+main .content .menu .even-menu {
+  text-align: end;
+}
+
+/* content review */
+main .reviews {
+  background-color: rgba(255, 207, 3, 255);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-block: 40px;
+}
+
+main .reviews h1 {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 0;
+}
+
+main .reviews .wrapper {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 50vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius: 7px;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* overflow: hidden; */
+}
+main .reviews .wrapper .review-container {
+  /* border: 1px solid black; */
+  width: 85%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1.8em 1.2em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  transition: transform 0.7s ease-in-out;
+}
+
+main .reviews .wrapper button {
+  font-size: 1.8em;
+  height: 2.2em;
+  width: 2.2em;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #af8c06;
+  box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+}
+
+main .reviews .wrapper button:hover {
+  /* border: 3px solid rgba(1, 17, 39, 255); */
+  color: #665200;
+  box-shadow: 0 0 1em rgba(51, 41, 0, 0.4);
+}
+
+main .reviews .wrapper button#next {
+  margin-right: -1em;
+}
+main .reviews .wrapper button#prev {
+  margin-left: -1em;
+}
+
+main .reviews .wrapper .review-container p {
+  color: #8c8c90;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+main .reviews .wrapper .review-container img {
+  display: block;
+  margin: 1.8em auto 1.25em auto;
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+main .reviews .wrapper .review-container h3 {
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+main .reviews .wrapper .review-container h6 {
+  color: #8c8c90;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+/* aside */
+main aside {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgba(254, 206, 0, 255);
+  box-shadow: 2px 10px 12px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+main aside:hover {
+  background-color: rgba(187, 1, 22, 255);
+}
+
+main aside a {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+
+main aside a img {
+  width: 60px;
+  margin: -22px 0 0 0;
+}
+main aside a p {
+  margin: 0;
+  font-weight: 900;
+  color: black;
+}
+main aside:hover a p {
+  color: white;
+}
+
+/* footer */
+footer {
+  padding-block: 20px;
+  padding-inline: 50px;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+footer img {
+  height: 125px;
+  border-radius: 50%;
+}
+footer .footer-desc {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+footer .footer-desc p {
+  margin: 0;
+}
+footer .footer-desc h4 {
+  margin: 0;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+  main .content {
+    padding-inline: 85px;
+  }
+  main aside {
+    position: fixed;
+    top: 30%;
+    right: 0;
+  }
+
+  main .reviews .wrapper .review-container p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+  }
+
+  main .reviews .wrapper .review-container img {
+    margin: 1.8em auto 1.25em auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .reviews .wrapper .review-container p {
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+  }
+
+  main .reviews .wrapper .review-container img {
+    margin: 0.5em auto 0.45em auto;
+  }
+
+  main .reviews .wrapper .review-container h3 {
+    font-size: 0.9em;
+  }
+  main .reviews .wrapper .review-container h6 {
+    font-size: 0.7;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-flow: wrap;
+    justify-content: center;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    text-align: center;
+  }
+
+  main .content .menu .items {
+    flex-flow: column;
+    height: fit-content;
+    padding-block: 15px;
+  }
+  main .content .menu .even-menu .menu-image {
+    order: -1;
+  }
+  main .content .menu .items .menu-description {
+    text-align: center;
+  }
+
+  main .reviews .wrapper .review-container p {
+    font-size: 0.6em;
+    line-height: 1.4em;
+    letter-spacing: 0.05em;
+  }
+  main .reviews .wrapper .review-container img {
+    display: none;
+  }
+  main .reviews .wrapper .review-container h3 {
+    font-size: 0.75em;
+  }
+  main .reviews .wrapper .review-container h6 {
+    font-size: 0.6;
+  }
+
+  main aside {
+    position: fixed;
+    top: 50%;
+    right: 0;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
